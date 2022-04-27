@@ -1,7 +1,6 @@
 #!/bin/bash
 #$ -S /bin/sh
 #$ -cwd
-#$ -N bkSNP_Lv
 #$ -j y
 
 # qsub -l s_vmem=128G,mem_req=128G snp_profile_simulation.sh 0.0045 10 20 2 1
@@ -17,7 +16,7 @@ n_embryos=$2
 mean_cells=$3
 sd_cells=$4
 trial=$5
-outDir=/home/brett/work/TrajectoryInference/SNPBarcodingSimulator/simulation/lower_heterozygosity_bound
+outDir=$6
 
 ${cmd} snp_profile_simulation.py \
 -t $transcriptsPath \
