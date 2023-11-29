@@ -1,0 +1,15 @@
+anndata
+geomloss
+jupyter
+matplotlib
+numexpr
+numpy
+pandas
+pathos
+POT
+scikit-learn
+scipy
+umap-learn
+wot
+torch==1.10.2+cpu
+statsmodels
